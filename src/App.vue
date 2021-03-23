@@ -13,6 +13,14 @@
     
     <router-view/>
     <div id="footer" class="p-4 text-center">
+        <div class="my-icons">
+          <a href="#" class="fa fa-facebook ml-4 pl-2"></a>
+          <a href="#" class="fa fa-twitter ml-4 pl-2"></a>
+          <a href="#" class="fa fa-google ml-4 pl-2"></a>
+          <a href="#" class="fa fa-linkedin ml-4 pl-2"></a>
+          <a href="#" class="fa fa-youtube ml-4 pl-2"></a>
+        </div>
+          
         <footer class="text-light p-4">
             <a href="https://lms.se.beetroot.academy/myCourses/lesson/ckhxhrznu61d60880bj0nj9ln" target="_blank" class="text-warning">Build This Pages</a> |
             <a href="https://app.slack.com/client/T019E5XNM4Y/D01GB3DGE9G" class="text-warning">Privacy Policy</a>
@@ -24,12 +32,56 @@
 </template>
 
 <style>
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 #app {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #2c3e50;
 }
+/* Start my icons and colors style */
+.my-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap; /* assumes you only want one row */
+}
+
+.fa {  
+	width: 30px;
+	padding: 7px;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin: 2px 2px;
+	color: white;
+	border-radius: 50%; 
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3B5998;
+}
+
+.fa-twitter {
+	background: #55ACEE;
+}
+
+.fa-google {
+	background: #dd4b39;
+}
+
+.fa-linkedin {
+	background: #007bb5;
+}
+
+.fa-youtube {
+	background: #bb0000;
+}
+/* End my icons and colors style */
 
 .my-logo {
   width: 50px;

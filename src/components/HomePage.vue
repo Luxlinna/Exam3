@@ -145,7 +145,8 @@ export default {
         lowTemp: '',
         highTemp: '',
         feelLike: '',
-        humidity: ''
+        humidity: '',
+        time: null
       }
     }
   },
@@ -251,6 +252,7 @@ export default {
 <style scoppe>
     @import "../assets/styles/animation.css";
     @import "../assets/styles/custom.css";
+    
     #home-page {
         background-color: #92D2F2;
         background: url('../assets/bg_mt.jpg') no-repeat center center;

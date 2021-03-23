@@ -1,9 +1,14 @@
 <template>
   <div id="app">
-    <div id="nav" class="text-right">
-      <router-link to="/" class="ml-4">Home</router-link> 
-      <router-link to="/about" class="ml-4">About</router-link> 
-      <router-link to="/contact" class="ml-4">Contact Us</router-link>
+    <div id="nav" class="p-3 ml-4">
+      <div>
+        <img src="@/assets/icons/logo.png" class="my-logo text-left">
+      </div>
+      <div class="text-right p-4">
+        <router-link to="/" class="ml-5">Home</router-link> 
+        <router-link to="/about" class="ml-5">About</router-link> 
+        <router-link to="/contact" class="ml-5">Contact Us</router-link> 
+      </div>
     </div>
     
     <router-view/>
@@ -12,7 +17,7 @@
             <a href="https://lms.se.beetroot.academy/myCourses/lesson/ckhxhrznu61d60880bj0nj9ln" target="_blank" class="text-warning">Build This Pages</a> |
             <a href="https://app.slack.com/client/T019E5XNM4Y/D01GB3DGE9G" class="text-warning">Privacy Policy</a>
             <br>
-            <small>&copy; 2021, Beetroot</small>
+            <small>&copy; 2021, Linna</small>
         </footer>
     </div>
   </div>
@@ -23,13 +28,12 @@
   font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; 
-  color: #2c3e50;*/
   background-color: #2c3e50;
 }
 
 .my-logo {
-  color: darkgoldenrod;
+  width: 50px;
+  height: 50px;
 } 
 
 #footer {
@@ -41,7 +45,10 @@
 }
 
 #nav {
-  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* assumes you only want one row */
 }
 
 #nav a {

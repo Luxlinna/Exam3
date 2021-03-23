@@ -38,6 +38,49 @@
   -moz-osx-font-smoothing: grayscale;
   background-color: #2c3e50;
 }
+/* Start my icons and colors style */
+.my-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap; /* assumes you only want one row */
+}
+
+.fa {  
+	width: 30px;
+	padding: 7px;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin: 2px 2px;
+	color: white;
+	border-radius: 50%; 
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3B5998;
+}
+
+.fa-twitter {
+	background: #55ACEE;
+}
+
+.fa-google {
+	background: #dd4b39;
+}
+
+.fa-linkedin {
+	background: #007bb5;
+}
+
+.fa-youtube {
+	background: #bb0000;
+}
+/* End my icons and colors style */
 
 .my-logo {
   width: 50px;

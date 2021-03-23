@@ -2,7 +2,7 @@
   <div class="container-fluid m-0 p-0">
     <div id="home-page" class="full-height">        
         <div id = "main" :class = "isDay ? 'day' : 'night'">
-            <div class = "container my-4">
+            <div class = "container my-4 ">
                 <h1 class = "title text-center"> Weather in</h1>
                 <form class = "search-location" v-on:submit.prevent="getWeather">
                     <input
@@ -15,7 +15,7 @@
                 </form>
 
                 <p class = "text-center my-3" v-if = "cityFound">No city found</p>
-                <div class = "card rounded my-3 shadow-lg back-card overflow-hidden" v-if = "visible">
+                <div class = "card form-rounded my-3 shadow-lg back-card overflow-hidden" v-if = "visible">
                     <!-- weather animation container -->
                     <div>
                     <div icon = "sunny" v-if = "clearsky">

@@ -2,11 +2,13 @@
   position: absolute;
   height: 100%;
   width: 100%;
+  
 }
 
 .container {
-  max-width: 400px;
-  min-width: 360px;
+  max-width: 400px !important;
+  min-width: 360px !important;
+
 }
 .title {
   font-size: 50px;
@@ -14,10 +16,10 @@
 }
 
 .form-rounded {
-  border-radius: 2rem;
+  border-radius: 2rem !important;
 }
 .back-card {
-  border-radius: 40px !important;
+  border-radius: 2rem !important;
   color: white;
   background: linear-gradient(to bottom right, #707070, #434647);
   text-shadow: 2px 2px 2px #707070;
@@ -37,7 +39,6 @@
   position: relative;
   top: -50px;
   font-size: 40pt;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .temp span {

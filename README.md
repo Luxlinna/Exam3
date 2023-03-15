@@ -1,4 +1,6 @@
 # exam3
+Your site is live at https://luxlinna.github.io/Exam3/
+
 
 ## Project setup
 ```

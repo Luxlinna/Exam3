@@ -21,9 +21,7 @@
     var(--blend1) var(--blend-from),
     var(--blend2) var(--blend-to)
   );
-  
 }
-
 [icon]::after {
   content: attr(data-label);
   position: absolute;
@@ -69,7 +67,6 @@
   --blend-to: 65%;
   --blend-dir: bottom right;
 }
-
 /* SUNNY */
 /* --------------------- */
 .sun {
